@@ -5,6 +5,8 @@
 	   <delete dir="target" />
 	   <mkdir dir="target" />
 	<javac srcdir="src" includeantruntime="false" destdir="target" classpath="lib/junit.jar" />
+
+<zip destfile="dst.zip" basedir="target"/>
 </target>
 
 <target name="clean">
