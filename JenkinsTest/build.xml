@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="Hoge">
+<target name="target1">
+	<javac srcdir="${src}" destdir="${build}"/>
+</target>
+
+</project>
