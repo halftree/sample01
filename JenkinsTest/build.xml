@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project name="Hoge">
 <target name="target1">
-	<javac srcdir="${src}" destdir="${build}"/>
+	<echo message="target1"/>
+	   <delete dir="target" />
+	   <mkdir dir="target" />
+	<javac srcdir="src" destdir="target" classpath="lib/junit.jar" />
+</target>
+
+<target name="clean">
+	<echo message="clean"/>
+   <delete dir="target" />
+   <mkdir dir="target" />
 </target>
 
 </project>
