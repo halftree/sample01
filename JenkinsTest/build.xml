@@ -4,7 +4,7 @@
 	<echo message="target1"/>
 	   <delete dir="target" />
 	   <mkdir dir="target" />
-	<javac srcdir="src" destdir="target" classpath="lib/junit.jar" />
+	<javac srcdir="src" includeantruntime="false" destdir="target" classpath="lib/junit.jar" />
 </target>
 
 <target name="clean">
